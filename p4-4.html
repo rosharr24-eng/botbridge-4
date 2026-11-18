@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotBridge Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+            color: #222;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        /* Header */
+
+        header {
+            background: linear-gradient(135deg, #312e81, #6366f1);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #e0e7ff;
+        }
+
+        /* Main Heading */
+
+        h2 {
+            color: #4338ca;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .intro {
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        /* Layout */
+
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar, .main-content {
+            flex: 1;
+            padding: 22px;
+            border-radius: 12px;
+            background: #f8faff;
+            border: 1px solid #dbeafe;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .sidebar:hover, .main-content:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(79,70,229,0.18);
+        }
+
+        h3 {
+            color: #4338ca;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+
+        .sidebar p, .main-content p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Button */
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #312e81;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px;
+            background: #eef2ff;
+            color: #4338ca;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+
+        /* Mobile Responsive */
+
+        @media (max-width: 600px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 23px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🤖 Welcome to BotBridge</h1>
+            <p>Connecting Businesses with Intelligent Chatbots</p>
+        </header>
+
+        <h2>Simple Web Layout Using CSS</h2>
+
+        <p class="intro">
+            BotBridge is an innovative platform that connects
+            businesses with intelligent chatbot technology.
+            It helps automate customer support, improve
+            communication and make business operations easier.
+        </p>
+
+        <div class="layout">
+
+            <div class="sidebar">
+                <h3>About BotBridge</h3>
+
+                <p>
+                    BotBridge helps businesses integrate
+                    AI-powered chatbots into their websites
+                    and services. It provides smart solutions
+                    for better customer interaction.
+                </p>
+
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="main-content">
+                <h3>Main Content</h3>
+
+                <p>
+                    BOTBRIDGE CONNECTS BUSINESSES WITH
+                    AI-POWERED CHATBOTS. IT AUTOMATES
+                    CUSTOMER SUPPORT, IMPROVES
+                    COMMUNICATION AND SAVES TIME.
+                    IT MAKES DIGITAL BUSINESS
+                    INTERACTIONS SMARTER AND FASTER.
+                </p>
+
+                <a href="#" class="btn">Explore Now</a>
+            </div>
+
+        </div>
+
+        <footer>
+            © 2026 BotBridge | Smart Connections, Better Solutions
+        </footer>
+
+    </div>
+
+</body>
+</html>
